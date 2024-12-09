@@ -1,0 +1,36 @@
+body{
+     font-family:  Georgia;/*fondi tüüp*/
+color: coral; /*teksti värv*/
+}
+h1{
+    border:solid 1px coral; /*ääris*/
+    padding: 15%; /*vahe tekstist ääriseni*/
+    margin: 15px;
+    border-radius: 100px;
+    width: 50%;
+    background-color: coral;
+}
+h2{
+    border:dotted 1px wheat; /*dashed, outline, double, solid,ääris*/
+    padding: 5%; /*vahe tekstist ääriseni*/
+    margin: 15px; /*vahe veebilehe piirist ääreseni*/
+    border-radius: 100px;
+    width: 50%;/*laius*/
+    background-color: wheat; /*tausta värv*/
+}
+ul{
+list-style-type: circle;/*markeri tüüp - square, */
+    padding: 10px;
+    background-color: coral;
+}
+ul li{
+    background-color: white;
+    margin: 10px;
+}
+table rd{
+    width: 60%;
+    border:solid 3px mediumpurple;
+    border-collapse:  collapse; /*ühine ääris*/
+    text-align: center; /*teksti joondaminekedkele*/
+    backround-color: coral;
+}
