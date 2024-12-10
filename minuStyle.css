@@ -1,36 +1,27 @@
 body{
      font-family:  Georgia;/*fondi tüüp*/
-color: coral; /*teksti värv*/
+    color: rgb(0, 0, 0); /*teksti värv*/
 }
 h1{
-    border:solid 1px coral; /*ääris*/
+    border: dotted 1px rgb(80, 255, 232); /*deshed, outline, double, soolid, ääris*/
     padding: 15%; /*vahe tekstist ääriseni*/
     margin: 15px;
-    border-radius: 100px;
-    width: 50%;
-    background-color: coral;
-}
-h2{
-    border:dotted 1px wheat; /*dashed, outline, double, solid,ääris*/
-    padding: 5%; /*vahe tekstist ääriseni*/
-    margin: 15px; /*vahe veebilehe piirist ääreseni*/
-    border-radius: 100px;
-    width: 50%;/*laius*/
-    background-color: wheat; /*tausta värv*/
+    border-radius: 10px;
+    width: 50%; /*laius*/
+    background-color: rgb(80, 220, 255); /*tausta värv*/
 }
 ul{
-list-style-type: circle;/*markeri tüüp - square, */
-    padding: 10px;
-    background-color: coral;
+   list-style-type: circle; /*markeri tüüp - square; */
+    padding: 5px; 
+    background-color: wheat;
 }
 ul li{
     background-color: white;
     margin: 10px;
 }
-table rd{
+table td{
     width: 60%;
-    border:solid 3px mediumpurple;
+    border:solid 3px rgb(216, 112, 112);
     border-collapse:  collapse; /*ühine ääris*/
-    text-align: center; /*teksti joondaminekedkele*/
-    backround-color: coral;
+    background-color: rgb(144, 80, 255);
 }
