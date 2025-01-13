@@ -1,27 +1,36 @@
 body{
-     font-family:  Georgia;/*fondi tüüp*/
-    color: rgb(0, 0, 0); /*teksti värv*/
+    font-family: "Arial Black";/*fondi tüüp*/
+    color: Darkred; /*teksti värv*/
 }
 h1{
-    border: dotted 1px rgb(80, 255, 232); /*deshed, outline, double, soolid, ääris*/
-    padding: 15%; /*vahe tekstist ääriseni*/
+    border: solid 2px Blue; /*ääris*/
+    padding: 11px; /*vahe tekstist ääriseni*/
     margin: 15px;
-    border-radius: 10px;
-    width: 50%; /*laius*/
-    background-color: rgb(80, 220, 255); /*tausta värv*/
+    border-radius: 20px;
+    width: 20%;
+    background-color: aqua;
+}
+h2{
+    border: dotted 5px Blue; /*dashed, outline, double, solid*/
+    padding: 14px; /*vahe tekstist ääriseni*/
+    margin: 13px; /*vahe veebilehe piirist ääriseni*/
+    border-radius: 30px;
+    width: 27%;/*laius*/
+    background-color: aqua;
 }
 ul{
-   list-style-type: circle; /*markeri tüüp - square; */
-    padding: 5px; 
-    background-color: wheat;
+    list-style-type: circle; /*markeri tüüp - square, */
+    padding: 7px;
+    background-color: lightskyblue;
 }
 ul li{
-    background-color: white;
-    margin: 10px;
+    background-color: lightseagreen;
+    margin: 4px;
 }
-table td{
-    width: 60%;
-    border:solid 3px rgb(216, 112, 112);
-    border-collapse:  collapse; /*ühine ääris*/
-    background-color: rgb(144, 80, 255);
+table, td{
+    width: 35%;
+    border: solid 3px ;
+    border-collapse: collapse; /*ühine ääris*/
+    text-align: center; /*teksti joondmine keskele*/
+    background-color: darkcyan;
 }
