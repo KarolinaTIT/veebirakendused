@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 25px 0;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Стили для первой таблицы */
+    .simple-table {
+      background-color: green;
+      color: white;
+    }
+
+    .simple-table td {
+      border-color: white;
+    }
+
+    /* Стили для второй таблицы */
+    .moderate-table {
+      background-color: lightblue;
+    }
+
+    .moderate-table td {
+      padding: 24px;
+    }
+
+    /* Стили для третьей таблицы */
+    .moderate-table-2 {
+      background-color: darkcyan;
+    }
+
+    .moderate-table-2 td {
+      height: 50px;
+    }
+
+    /* Стили для четвёртой таблицы */
+    .moderate-table-3 {
+      background-color: cornflowerblue;
+    }
+
+    .moderate-table-3 td {
+      height: 25px;
+    }
+  </style>
+</head>
+<body>
+<h2>Lihtne tabel 2 rida * 3 veergu</h2>
+<table class="simple-table">
+  <tr>
+    <td>GGG</td>
+    <td>FFF</td>
+    <td>III</td>
+  </tr>
+  <tr>
+    <td>KKK</td>
+    <td>OOO</td>
+    <td>LLL</td>
+  </tr>
+</table>
+
+<h2>Natukene keerulisem tabel</h2>
+<table class="moderate-table">
+  <tr>
+    <td colspan="3" style="background-color: cadetblue; color: beige;">AAA</td>
+  </tr>
+  <tr>
+    <td>KKK</td>
+    <td>OOO</td>
+    <td>LLL</td>
+  </tr>
+</table>
+
+<h2>Natukene keerulisem tabel 2</h2>
+<table class="moderate-table-2">
+  <tr>
+    <td style="width: 50%; height: 10px;">A</td>
+    <td rowspan="4" style="width: 25%; background-color:darkcyan;">B</td>
+  </tr>
+  <tr>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>C</td>
+  </tr>
+</table>
+
+<h2>Natukene keerulisem tabel 3</h2>
+<table class="moderate-table-3">
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td colspan="2">8</td>
+    <td>7</td>
+  </tr>
+</table>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iseseisev töö (tabel on joonistatud paberi peal)</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 20%;
+      margin: 10px auto;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+      font-size: 10px;
+      color: white; /* Цвет текста */
+    }
+
+    /* Цвета для каждой ячейки */
+    .cell-1 { background-color: red; }
+    .cell-2 { background-color: orange; }
+    .cell-3 { background-color: yellow; color: black; }
+    .cell-4 { background-color: green; }
+    .cell-5 { background-color: blue; }
+    .cell-6 { background-color: purple; }
+    .cell-7 { background-color: pink; color: black; }
+    .cell-8 { background-color: teal; }
+    .cell-9 { background-color: brown; }
+    .cell-10 { background-color: grey; }
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <td colspan="4" class="cell-1">1</td>
+  </tr>
+  <tr>
+    <td class="cell-2">2</td>
+    <td class="cell-3">3</td>
+    <td class="cell-4">4</td>
+    <td class="cell-5">5</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="cell-6">6</td>
+    <td rowspan="2" class="cell-7">7</td>
+    <td rowspan="2" class="cell-8">8</td>
+  </tr>
+  <tr>
+    <td class="cell-9">9</td>
+    <td class="cell-10">10</td>
+  </tr>
+</table>
+</body>
+</html>
+
