@@ -1,0 +1,61 @@
+function lugemine() {}
+document.getElementById("vastus").innerHTML="Tere hommikust, "+ document.getElementById("nimi").value+""+document.getElementById("pnimi").value
+//sama funktsioon koos muutujatega
+function lugemine2() {}
+let nimi=document.getElementById("nimi").value;
+let pnimi=document.getElementById("pnimi").value;
+let vastus=document.getElementById("vastus");
+let varv=document.getElementById("varv");
+vastus.innerHTML="Tere hommikust, mees "+nimi+" "+pnimi+"!";
+vastus.style.color=varv.value;
+//radio-nupud
+let paev=document.getElementById("synnipaev").value;
+let mees=document.getElementById("mees");
+let pilt=document.getElementById("pilt");
+let naine=document.getElementById("naine");
+let pilt=document.getElementById("pilt");
+if (mees.checked){
+}
+else if(naine.checked){
+    vastus.innerHTML="Tere hommikust, mees "+nimi+" "+pnimi+"!"+"Sinu synnipaev on "+paev;
+    vastus.style.color=varv.value;
+
+} else {
+   vastus.innerHTML="palun vali sugu";
+}
+function selectValik(){
+    let vastis2=document.getElementById("vastus2");
+    let  linn=document.getElementById("linn");
+
+    vastus2.innerHTML="Sinu linn -"+linn.value;
+    vastus2.style.backgroundColor ="green";
+}
+//checbox valik
+function selectValik2(){
+    let vastus3=document.getElementById("vastus3");
+    let sport=document.getElementById("sport");
+    let  joonistama=document.getElementById("joonistama");
+    let muusika=document.getElementById("muusika");
+    let loetama=document.getElementById("loetama");
+    let kirjutama=document.getElementById("kirjutama");
+
+
+    let hobby=""
+    if (sport.checked){
+        hobby+=sport.value+", ";
+    }
+        if (loetama.checked){
+            hobby+=loetama.value+", ";
+        }
+            if (muusika.checked){
+                hobby+=muusika.value+", ";
+            }
+                if (joonistama.checked){
+                    hobby+=joonistama.value+", ";
+                }
+                    if (kirjutama.checked){
+                        hobby+=kirjutama.value+", ";
+                    }
+
+        vastus3.innerHTML="Sinu hobby -"+hobby;
+}
