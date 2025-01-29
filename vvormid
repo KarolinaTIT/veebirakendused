@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Vormist lugemine</title>
+    <script src="vormScript.js"></script>
+    <link rel="stylesheet" href="jsStyle.css">
+    <h1> Vormist lugemine </h1>
+</head>
+<body>
+<form action="">
+    <label for ="nimi">Sisesta nimi></label>
+    <input type="text" name="nimi" id="nimi">
+    <br>
+    <label for ="pnimi">Sisesta pimi></label>
+    <input type="text" name="pnimi" id="pnimi">
+    <br>
+    < for="varv">Vali vastuse värv>
+        <input type="color" id="varv">
+        <br>
+        <!---raadio nupp-->
+        <strong>Vali sugu:</strong>
+        <br>
+        <input type="radio" name="sugu" id="mees">
+        <label for="mees">mees</label>
+        <br>
+        <input type="radio" name="sugu" id="naine">
+        <label for="naine">naine</label>
+        <br><br>
+        <label for="synnipaev">Vali oma synnipaev</label>
+        <input type="date" name="synnipaev" id="synnipaev">
+        <br>
+<img src="" alt="" id="pilt">
+        <br>
+    <form action="">
+            <label for ="tel">Sisesta number telefoni></label>
+            <input type="text" name="tel" id="tel">
+            <br>
+            <label for="number">Sisesta lemmik number:</label>
+            <input type="number" name="number" id="number">
+            <br>
+            <title> Email</title>
+            </form>
+            <body>
+            <h3>Sisesta oma email</h3>
+            <input type="email" placeholder="Sinu email">
+            <br>
+            <form action="">
+
+
+                <a href="https://github.com/Zoya255/MiniSites" target="_blank">Klikka siia, et külastada veebilehte</a>
+
+<!ripp loend-->
+
+                <br>
+                <strong>Kus sa elad?<strong>
+                <select name="linn" id="linn" onchange="selectValik()">
+                    <option value="">vali linn...</option>
+                <option value="Talliinn">Tallinn</option>
+                    <option value="Tartu">Tartu</option>
+                    <option value="Pärnu">Pärnu</option>
+                    <option value="Valga">Valga</option>
+                </select>
+                    <div id="vastus2"></div>
+                    <!--checkbox-->
+                    <br>
+                    <strong>Vali oma hobby</strong>
+                    <br>
+                    <input type="checkbox" id="sport" value="sport" onclick="checbox">
+                    <label for="sport">Sport</label>
+                    <br>
+                    <input type="checkbox" id="loetama" value="loetama">
+                    <label for="loetama">Loetama</label>
+                    <br>
+                    <input type="checkbox" id="muusika" value="muusika">
+                    <label for="muusika">Muusika</label>
+                    <br>
+                    <input type="checkbox" id="joonistama" value="joonistama">
+                    <label for="joonistama">Joonistama</label>
+                    <br>
+                    <input type="checkbox" id="kirjutama" value="kirjutama">
+                    <label for="kirjutama">Kirjutama</label>
+                    <br>
+                    <div id="vastus3"></div>
+                    <input type="button" onclick="checkboxValik()" value="hobby">
+
+
+
+
+
+
+                <div id="vastus"></div>
+                <input type="button" value="OK" onclick="lugemine2()">
